@@ -1,19 +1,17 @@
 {
-  "name": "bookshop",
-  "version": "1.0.1",
-  "description": "",
+  "name": "express-book-review",
+  "version": "1.0.0",
+  "description": "Online bookstore API with authentication and book reviews",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "private": true,
   "dependencies": {
-    "express": "^4.18.1",
-    "express-session": "^1.17.3",
-    "jsonwebtoken": "^8.5.1",
-    "nodemon": "^2.0.19"
+    "axios": "^1.20.0",
+    "bcryptjs": "^3.0.3",
+    "express": "^4.22.3",
+    "express-session": "^1.19.0",
+    "jsonwebtoken": "^9.0.3"
   }
 }

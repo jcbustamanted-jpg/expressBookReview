@@ -1,0 +1,5 @@
+﻿curl.exe -sS -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" --data-binary "@test-data/credentials.json" -c test-data/cookies.txt
+{
+  "message": "Login successful.",
+  "username": "juan_test"
+}

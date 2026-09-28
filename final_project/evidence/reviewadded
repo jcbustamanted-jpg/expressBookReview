@@ -1,0 +1,17 @@
+﻿curl.exe -sS -X PUT http://localhost:5000/customer/auth/review/1 -H "Content-Type: application/json" --data-binary "@test-data/review.json" -b test-data/cookies.txt
+{
+  "message": "Review added successfully.",
+  "isbn": "1",
+  "reviews": {
+    "juan_test": "An excellent book with memorable characters."
+  }
+}
+
+curl.exe -sS -X PUT http://localhost:5000/customer/auth/review/1 -H "Content-Type: application/json" --data-binary "@test-data/review-updated.json" -b test-data/cookies.txt
+{
+  "message": "Review updated successfully.",
+  "isbn": "1",
+  "reviews": {
+    "juan_test": "A powerful story with memorable characters. Highly recommended."
+  }
+}
